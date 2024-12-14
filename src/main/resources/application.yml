@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jaxongir
+    username: admin
+    password: 123456
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+upload:
+  server:
+    folder: /home/jaxongir/IdeaProjects/mohirdev_org
+
+api:
+  jsonplaceholder: https://jsonplaceholder.typicode.com
